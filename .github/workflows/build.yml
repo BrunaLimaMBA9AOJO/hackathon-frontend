@@ -16,10 +16,10 @@ jobs:
       - name: Checkout to the repository
         uses: actions/checkout@v2
 
-      - name: Set up NodeJS environment
-        uses: actions/setup-node@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
         with:
-          node-version-file: "18.5"
+          node-version: "18.x"
 
       - name: Cache node modules
         id: cache-npm
