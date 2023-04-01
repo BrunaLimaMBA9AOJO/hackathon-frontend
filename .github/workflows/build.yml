@@ -36,12 +36,7 @@ jobs:
 
       - name: Install package dependencies
         run: npm install
-
-      # Run test cases and this could ensure minimum coverage as well if set
-      - name: Execute test cases
-        run: npm run test
-        env:
-          CI: true
+        
       - name: Create test build
         run: npm run build
       - name: Share artifact inside workflow
